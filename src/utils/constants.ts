@@ -22,5 +22,6 @@ export const SALT = 10;
 // Error Messages
 export const STANDARD_ERROR = 'Something went wrong';
 export const NOT_ENOUGH_PERMISSION = "You don't have permissions for this operation";
+export const USER_EXIST_ERROR = 'Username already exists';
 
 export const ENCODING_UTF8 = 'utf-8';
