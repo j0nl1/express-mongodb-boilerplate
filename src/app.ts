@@ -5,6 +5,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import express from 'express';
 import compression from 'compression';
+import * as loaders from './loaders';
 
 const app = express();
 const { DOMAIN, PORT } = process.env;
@@ -14,5 +15,7 @@ app.use(helmet());
 app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+loaders.router(app);
 
 http.createServer(app).listen(PORT, () => logger.info(`Server running and listening in port: ${PORT}`));
