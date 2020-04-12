@@ -1,6 +1,7 @@
 {
   "name": "boiler-plate-express-mongodb",
   "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "start": "nodemon",
     "start:debug": "nodemon --inspect",

@@ -1,4 +1,6 @@
-# Boiler Plate Expres-MongoDB 👋
+# Express-MongoDB Boilerplate 👋
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 ## Installation
 
@@ -25,3 +27,10 @@ When we commit code, it automatically executes some scripts:
 
 If all these scripts finalize correctly, the commit ends. Otherwise, the developer will be forced to fix the errors in order to be able to commit the changes.
 
+## Contributing
+
+Contributions are more than welcome!
+
+## License
+
+[MIT](LICENSE)
