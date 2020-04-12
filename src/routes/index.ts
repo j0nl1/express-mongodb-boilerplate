@@ -1,0 +1,1 @@
+export { HealthStatusRoute } from './health';
