@@ -1,6 +1,7 @@
 # Express-MongoDB Boilerplate 👋
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/caki0915/my-awesome-greeter/coverage.svg?style=flat-square)](https://codecov.io/gh/j0nl1/express-mongodb-boilerplate/)
 
 ## Installation
 
