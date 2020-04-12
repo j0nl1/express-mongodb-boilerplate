@@ -8,4 +8,5 @@ export interface IUserModel extends Document {
   fullName: string;
   bio: string;
   image: string;
+  validatePassword: Function;
 }
