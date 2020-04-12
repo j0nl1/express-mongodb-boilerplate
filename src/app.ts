@@ -16,6 +16,7 @@ app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+loaders.middlewares(app);
 loaders.router(app);
 loaders.mongodb();
 
