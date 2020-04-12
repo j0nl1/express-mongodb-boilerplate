@@ -1,0 +1,21 @@
+version: "3"
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - MONGO_INITDB_DATABASE=$DB_NAME
+      - MONGO_INITDB_ROOT_USERNAME=$DB_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD=$DB_PASSWORD
+    volumes:
+      - ./data/mongodb:/data/db
+      - ./scripts/mongo.sh:/docker-entrypoint-initdb.d/mongo.sh
+    networks:
+      - express-boilerplate-network
+networks:
+  express-boilerplate-network:
+    driver: bridge

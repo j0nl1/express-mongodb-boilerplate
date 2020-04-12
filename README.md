@@ -27,6 +27,18 @@ When we commit code, it automatically executes some scripts:
 
 If all these scripts finalize correctly, the commit ends. Otherwise, the developer will be forced to fix the errors in order to be able to commit the changes.
 
+## Docker
+
+We choosed [docker](https://www.docker.com/) as a container runtime.
+
+If you want to build a project's image: `docker build -t express-boilerplate`
+
+If you want to run the image after created: `docker run -p 3000:3000 express-boilerplate`
+
+We also added a docker-compose for development purpose, it contains an image of mongodb.
+
+In case you want to run it: `docker-compose up -d`
+
 ## Contributing
 
 Contributions are more than welcome!
