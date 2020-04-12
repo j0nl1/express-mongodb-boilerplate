@@ -17,5 +17,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 loaders.router(app);
+loaders.mongodb();
 
 http.createServer(app).listen(PORT, () => logger.info(`Server running and listening in port: ${PORT}`));
